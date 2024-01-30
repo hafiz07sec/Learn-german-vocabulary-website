@@ -11,13 +11,10 @@ export class QuestionService {
   constructor(private http: HttpClient) { }
   
 
-  getQuestionJson(){
-    return this.http.get<any>("assets/questions.json");
-    
-  }
-
-  getAllQuestionBackend(){
+  getAllQuestions(){
     return this.http.get<any>(`${this.apiUrl}/allQuestions`);
   }
+    
+  
 
 }

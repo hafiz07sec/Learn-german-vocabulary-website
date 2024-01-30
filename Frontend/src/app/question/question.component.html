@@ -9,7 +9,8 @@
                 <span style="font-style: italic;">Welcome {{name}}</span>
             </div>
         </div>
-       
+
+     
         <ng-container *ngIf="!isQuizCompleted">
             <div class="score-tQuestion-timer d-flex justify-content-around py-3">
                 <div class="score">
@@ -28,20 +29,23 @@
     
             <div class="question">
                 <div class="card">
-                    <h3>{{questionList[currentQuestion]?.questionText}}</h3>
-                 
+                    <h3>{{questionList[currentQuestion]?.questionTitle}}</h3>
                 </div>
             </div>
+
             <div class="options">
-                <ol *ngFor="let option of questionList[currentQuestion]?.options">
+                <ol *ngFor="let option of opt">
                     <li (click)="answer(currentQuestion+1, option)">
-                        <div appChangeBg [isCorrect]="option.correct" class="card">
-                         {{option.text}}
+                        <div appChangeBg [isCorrect]="option===questionList[currentQuestion]?.rightAnswer" class="card">
+                         {{option}}
                         </div>
                     </li>
                   
                 </ol>
-            </div>
+            </div> 
+            
+         
+       
             <div class=" next-prev-refresh d-flex justify-content-between">
                 <button [disabled]="currentQuestion===0" class="btn" (click)="previousQuestion()"><i class="fa text-primary fa-chevron-left fa-3x" aria-hidden="true"></i></button>
                 <button class="btn" (click)="resetQuiz()"><i class="fa text-primary fa-refresh fa-3x" aria-hidden="true"></i></button>
@@ -63,5 +67,6 @@
             </div>
         </ng-container>
 
-    </div>
+      
+    </div>  
 </div>
