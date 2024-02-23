@@ -3,7 +3,7 @@ import {
   Header,
   PrimeTemplate,
   SharedModule
-} from "./chunk-IYGR3IVK.js";
+} from "./chunk-VOB35RYR.js";
 import {
   CommonModule,
   NgClass,

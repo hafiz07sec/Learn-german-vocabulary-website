@@ -1,9 +1,13 @@
-
 <nav class="navbar navbar-dark bg-primary">
-    <div class="container-fluid">
+    <div class="container-fluid justify-content">
       <a class="navbar-brand text-bold" href="#">
         <img src="https://cdn-icons-png.flaticon.com/512/5694/5694744.png" alt="Logo" width="30" height="24" class="d-inline-block align-text-top">
         <span class="text-uppercase">Vocabulary</span>
       </a>
+
+      <div class="user" >
+        <p-button *ngIf="isLoggedIn()" label="Sign Out" (click)="signOut()"></p-button>
+      </div>
+    
     </div>
-  </nav>
+</nav> 

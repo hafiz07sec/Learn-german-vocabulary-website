@@ -5,6 +5,12 @@
       "fullName": "test",
       "email": "test@gmail.com",
       "password": "123"
+    },
+    {
+      "id": "6937",
+      "fullName": "Masum",
+      "email": "md.masum@stud.fra-uas.de",
+      "password": "123"
     }
   ]
 }

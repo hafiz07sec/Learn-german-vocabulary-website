@@ -1,4 +1,9 @@
 import {
+  BaseIcon,
+  Ripple,
+  RippleModule
+} from "./chunk-CVISAEU6.js";
+import {
   animate,
   animateChild,
   query,
@@ -8,11 +13,6 @@ import {
   trigger
 } from "./chunk-WS4GZPDM.js";
 import {
-  BaseIcon,
-  Ripple,
-  RippleModule
-} from "./chunk-FMJRVOL4.js";
-import {
   MessageService,
   ObjectUtils,
   PrimeNGConfig,
@@ -20,7 +20,7 @@ import {
   SharedModule,
   UniqueComponentId,
   zindexutils
-} from "./chunk-IYGR3IVK.js";
+} from "./chunk-VOB35RYR.js";
 import {
   CommonModule,
   DOCUMENT,

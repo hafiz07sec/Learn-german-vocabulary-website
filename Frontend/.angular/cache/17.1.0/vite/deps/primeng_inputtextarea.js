@@ -64,9 +64,6 @@ var InputTextarea = class _InputTextarea {
       });
     }
   }
-  ngAfterViewChecked() {
-    this.updateState();
-  }
   ngAfterViewInit() {
     if (this.autoResize)
       this.resize();
